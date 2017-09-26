@@ -2,4 +2,5 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 def test(request, *args, **kwargs):
-    return HttpResponse
+    html = "<html><body>test</body></html>"
+    return HttpResponse(html)
